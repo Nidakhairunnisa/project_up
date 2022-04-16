@@ -1,0 +1,72 @@
+<section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+              <% console.log(data)%>
+              <h5 class="my-3"><%= data.nama_admin %></h5>
+              <p class="text-muted mb-1"> ADMIN</p>
+              <div class="d-flex justify-content-center mb-2">
+                <button type="button" href= "/detail_admin//<%= data.id_admin %>" class="btn btn-outline-primary ms-1">Update</button>
+                <button type="button" href= "/detail_admin/del/<%= data.id_admin %>" class="btn btn-outline-danger ms-1">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                    <p class="mb-0">ID</p>
+                </div>
+                <div class="col-sm-9">
+                    <p class="text-muted mb-0"><%= data.id_admin %></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Full Name</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"><%= data.nama_admin %></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Email</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"><%= data.email_admin %></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Phone</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"><%= data.mobile_admin %></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Password</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0"><%= data.password_admin %></p>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

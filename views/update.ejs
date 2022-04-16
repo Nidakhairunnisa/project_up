@@ -1,0 +1,37 @@
+<div class="container mt-3">
+  <div class="row">
+    <div div class="col-md-6">
+      <h2>Edit contact form</h2>
+      <% if (typeof notif != 'undefined') { %>
+        <% notif.forEach(function (alert)  { %>
+          <div class="alert alert-danger" role="alert">
+            <%= alert.msg %>
+          </div>
+          <%})%>
+      <% } %>  
+      <% console.log(data)%>
+        <form method="post" action="/admin/update/<%= data.id_admin%>">
+        <div class="form-group">
+          <label for="labelname">Name</label> 
+          <input type="hidden" class="form-control" id="oldname" name="oldname" aria-describedby="nameHelp" value="<%= (data.oldname)? data.oldname : data.nama_admin  %>" placeholder="Enter Name"> 
+          <input type="text" class="form-control" id="labelname" name="nama" aria-describedby="nameHelp" value="<%= data.name %>" placeholder="Enter Name"> 
+        </div>
+        <div class="form-group">
+            <label for="labelemail1">Email address</label>
+            <input type="text" class="form-control" id="labelemail1" name="email" aria-describedby="emailHelp" value="<%= data.email %>" placeholder="Enter email">
+          </div>
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="text" class="form-control" id="labelmobile" name="mobile" value="<%= data.mobile %>" placeholder="Enter mobile">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="labelpassword" name="password" value="<%= data.password %>" placeholder="Enter password"required />
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+

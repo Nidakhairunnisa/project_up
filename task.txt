@@ -1,0 +1,26 @@
+HOME
+>GET / 304 25.840 ms - -
+>>Mengambil data dari file index.ejs dengan keadaan bahwa data yang disimpan di cache tidak berubah. 
+sehingga halaman website bisa lebih cepat dibuka dan memproses selama 25.840 ms.
+>GET /style.css 304 3.863 ms - -
+>>Mengambil data dari file style.css dengan keadaan bahwa data yang disimpan di cache tidak berubah. 
+sehingga halaman website bisa lebih cepat dibuka dan memproses selama 3.863 ms.
+
+About
+>GET /about 304 6.153 ms - -
+>>Mengambil data dari file about.ejs dengan keadaan bahwa data yang disimpan di cache tidak berubah. 
+sehingga halaman website bisa lebih cepat dibuka dan memproses selama 6.153 ms.
+>GET /style.css 304 2.322 ms - -
+>>Mengambil data dari file style.css dengan keadaan bahwa data yang disimpan di cache tidak berubah. 
+sehingga halaman website bisa lebih cepat dibuka dan memproses selama 2.322 ms.
+>GET /foto.JPG 304 2.690 ms - -
+>>Mengambil data dari file foto.JPG dengan keadaan bahwa data yang disimpan di cache tidak berubah. 
+sehingga halaman website bisa lebih cepat dibuka dan memproses selama 2.322 ms.
+
+Contact
+>GET /contact 304 7.129 ms - -
+>>Mengambil data dari file contact.ejs dengan keadaan bahwa data yang disimpan di cache tidak berubah. 
+sehingga halaman website bisa lebih cepat dibuka dan memproses selama 7.129 ms.
+>GET /style.css 304 0.927 ms - -
+>>Mengambil data dari file style.css dengan keadaan bahwa data yang disimpan di cache tidak berubah. 
+sehingga halaman website bisa lebih cepat dibuka dan memproses selama 0.927 ms.
